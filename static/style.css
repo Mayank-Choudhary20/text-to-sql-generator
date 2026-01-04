@@ -1,0 +1,153 @@
+/* ---------- Base ---------- */
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- Container ---------- */
+.container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 40px;
+}
+
+/* ---------- Header ---------- */
+.app-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.app-header h1 {
+    font-size: 2.6em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.app-header p {
+    font-size: 1.1em;
+    color: #e0e0e0;
+}
+
+/* ---------- Layout ---------- */
+.flex-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.left-column,
+.right-column {
+    flex: 1;
+    min-width: 320px;
+}
+
+/* ---------- Glass Cards ---------- */
+.glass-card {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(16px);
+    border-radius: 18px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+    transition: transform 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+}
+
+/* ---------- Textarea ---------- */
+label {
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+}
+
+textarea {
+    width: 100%;
+    min-height: 150px;
+    padding: 18px;
+    border-radius: 14px;
+    border: none;
+    resize: none;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    line-height: 1.6;
+}
+
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 15px rgba(0,198,255,0.6);
+}
+
+/* ---------- Buttons ---------- */
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* ---------- Dropdown ---------- */
+select {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 16px;
+    border-radius: 14px;
+    border: none;
+    background: rgba(0,0,0,0.35);
+    color: #fff;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+    box-shadow: 0 0 12px rgba(0,198,255,0.6);
+}
+
+select option {
+    background: #2b2b2b;
+}
+
+/* ---------- Output ---------- */
+.output h3 {
+    color: #00ffcc;
+    margin-bottom: 15px;
+}
+
+pre {
+    font-family: 'Roboto Mono', monospace;
+    background: rgba(0,0,0,0.3);
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 15px;
+    overflow-x: auto;
+}
+
+.copy-btn {
+    margin-top: 15px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}

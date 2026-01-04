@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text to SQL Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <header class="app-header">
+        <h1>🧠 Text-to-SQL Generator</h1>
+        <p>Convert natural language into SQL queries instantly</p>
+    </header>
+
+    <!-- Main Layout -->
+    <div class="flex-container">
+
+        <!-- LEFT SIDE -->
+        <div class="left-column">
+
+            <!-- Input Card -->
+            <div class="glass-card">
+                <label for="text">Enter Text Query</label>
+
+                <form method="POST">
+                    <textarea id="text" name="text"
+                        placeholder="Example: Show employees with salary greater than 50000">{{ text }}</textarea>
+
+                    <button type="submit">⚡ Generate SQL</button>
+                </form>
+            </div>
+
+            <!-- Try Examples Dropdown -->
+            <div class="glass-card examples">
+                <h3>💡 Try Example Queries</h3>
+
+                <select id="exampleSelect" onchange="selectExample(this)">
+                    <option value="">-- Select an example --</option>
+                    <option value="Show all students">Show all students</option>
+                    <option value="Get name and age of students">Get name and age of students</option>
+                    <option value="Show employees with salary greater than 50000">
+                        Employees with salary greater than 50000
+                    </option>
+                    <option value="Show customers with age greater than 25 and city equals delhi">
+                        Customers age &gt; 25 in Delhi
+                    </option>
+                    <option value="Show orders placed after date 2023-01-01">
+                        Orders placed after 2023-01-01
+                    </option>
+                </select>
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="right-column">
+            {% if sql %}
+            <div class="glass-card output">
+                <h3>✅ Generated SQL</h3>
+                <pre id="sqlText">{{ sql }}</pre>
+                <button class="copy-btn" onclick="copySQL()">📋 Copy SQL</button>
+            </div>
+            {% endif %}
+        </div>
+
+    </div>
+</div>
+
+<script>
+    const textarea = document.getElementById("text");
+
+    function autoResize() {
+        textarea.style.height = "auto";
+        textarea.style.height = textarea.scrollHeight + "px";
+    }
+
+    textarea.addEventListener("input", autoResize);
+
+    function selectExample(select) {
+        if (select.value !== "") {
+            textarea.value = select.value;
+            autoResize();
+        }
+    }
+
+    function copySQL() {
+        const sql = document.getElementById("sqlText").innerText;
+        navigator.clipboard.writeText(sql);
+        alert("SQL copied to clipboard!");
+    }
+
+    window.onload = autoResize;
+</script>
+
+</body>
+</html>
