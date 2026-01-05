@@ -6,13 +6,13 @@ A web-based application that converts **natural language text into SQL queries**
 
 ## 🌐 Live Demo
 
-🔗 **Deployed on Render:**
+🔗 **Deployment:**
 
 ```
 https://text-to-sql-generator.onrender.com
 ```
 
-> ⚠️ Note: The app is hosted on Render Free Tier, so the first request may take 30–60 seconds if the service is idle.
+> ⚠️ Note: The app is hosted on Free Tier, so the first request may take 30–60 seconds if the service is idle.
 
 ---
 
