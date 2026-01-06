@@ -70,17 +70,58 @@ text-to-sql-generator/
 
 <h2>⚙️ RUN LOCALLY</h2>
 
+<h3>1️⃣ Clone the Repository</h3>
+
 <pre>
 git clone https://github.com/Mayank-Choudhary20/text-to-sql-generator.git
 cd text-to-sql-generator
+</pre>
+
+<h3>2️⃣ Create & Activate Virtual Environment</h3>
+
+<pre>
 python -m venv venv
-source venv/bin/activate   # macOS/Linux
-# venv\Scripts\activate    # Windows
+</pre>
+
+<b>Activate the environment:</b>
+
+<pre>
+# macOS / Linux
+source venv/bin/activate
+
+# Windows
+venv\Scripts\activate
+</pre>
+
+<h3>3️⃣ Install Dependencies</h3>
+
+<pre>
 pip install -r requirements.txt
+</pre>
+
+<h3>4️⃣ Run Flask Web Application</h3>
+
+<pre>
 python app.py
 </pre>
 
+<p>
+Open your browser and visit:<br>
+<b>http://127.0.0.1:5000</b>
+</p>
+
+<h3>🔹 (Optional) Run Streamlit Demo</h3>
+
+<pre>
+streamlit run streamlit_app.py
+</pre>
+
+<p>
+Streamlit will automatically open in your browser.
+</p>
+
 <hr>
+
 
 <h2 align="center">👨‍💻 AUTHOR & CONTACT</h2>
 
