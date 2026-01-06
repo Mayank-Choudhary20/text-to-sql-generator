@@ -1,136 +1,103 @@
-# Text to SQL Query Generator 🚀
+<h1 align="center">🚀 Text-to-SQL AI Generator</h1>
 
-A web-based application that converts **natural language text into SQL queries** using Python and Flask. This project is designed to help users interact with databases without needing deep SQL knowledge, making database querying faster and more intuitive.
+<h2 align="center">Convert Natural Language into SQL Queries Instantly</h2>
 
----
+<p align="center">
+<b>Bridging the gap between plain English and structured databases</b><br>
+Built using <b>Python & Flask</b> for fast, accurate SQL generation.
+</p>
 
-## 🌐 Live Demo
+<hr>
 
-🔗 **Deployment:**
+<h2 align="center">🌐 LIVE APPLICATION LINKS</h2>
 
-```
-https://text-to-sql-generator.onrender.com
-```
+<h1 align="center">
+🚀 <a href="https://text-to-sql-generator.onrender.com" target="_blank">
+RENDER – FULL WEB APPLICATION
+</a>
+</h1>
 
-> ⚠️ Note: The app is hosted on Free Tier, so the first request may take 30–60 seconds if the service is idle.
+<h1 align="center">
+📊 <a href="https://text-to-sql-generator-mbv6rpmnvfy2x3tavyo2zr.streamlit.app/" target="_blank">
+STREAMLIT – INTERACTIVE DEMO
+</a>
+</h1>
 
----
+<p align="center">
+⏳ <b>Note:</b> Free-tier hosting may take <b>30–60 seconds</b> to wake up on first load.
+</p>
 
-## 📌 Features
+<hr>
 
-* Convert plain English text into SQL queries
-* Simple and clean web interface
-* Flask-based backend
-* Easily extendable logic for complex SQL generation
-* Deployed on cloud (Render)
+<h2>✨ FEATURES</h2>
 
----
+<ul>
+<li><b>Natural Language → SQL</b> conversion</li>
+<li><b>Glassmorphism UI</b> with blur & smooth animations</li>
+<li><b>Typewriter Effect</b> for generated SQL</li>
+<li><b>Loading Shimmer</b> while processing requests</li>
+<li><b>Copy-to-Clipboard</b> with pop animation</li>
+</ul>
 
-## 🛠️ Tech Stack
+<hr>
 
-* **Backend:** Python, Flask
-* **Frontend:** HTML, CSS, Jinja2
-* **Deployment:** Render
-* **Version Control:** Git & GitHub
+<h2>🛠️ TECH STACK</h2>
 
----
+<table>
+<tr><td><b>Backend</b></td><td>Python 3.x, Flask</td></tr>
+<tr><td><b>Frontend</b></td><td>HTML5, CSS3, Jinja2</td></tr>
+<tr><td><b>Logic</b></td><td>Regex & NLP-based Parsing</td></tr>
+<tr><td><b>Deployment</b></td><td>Render, Streamlit</td></tr>
+</table>
 
-## 📂 Project Structure
+<hr>
 
-```
+<h2>📂 PROJECT STRUCTURE</h2>
+
+<pre>
 text-to-sql-generator/
-│
-├── app.py                 # Main Flask application
-├── texttosql.py           # Text to SQL conversion logic
-├── requirements.txt       # Project dependencies
+├── app.py
+├── texttosql.py
+├── streamlit_app.py
 ├── templates/
-│   └── index.html         # Frontend UI
-├── static/                # Static files (CSS, JS if added)
-└── README.md              # Project documentation
-```
+│   └── index.html
+└── static/
+    └── css/
+        └── style.css
+</pre>
 
----
+<hr>
 
-## ⚙️ Installation & Setup (Local)
+<h2>⚙️ RUN LOCALLY</h2>
 
-### 1️⃣ Clone the repository
-
-```bash
+<pre>
 git clone https://github.com/Mayank-Choudhary20/text-to-sql-generator.git
 cd text-to-sql-generator
-```
-
-### 2️⃣ Create a virtual environment (recommended)
-
-```bash
 python -m venv venv
-venv\Scripts\activate   # Windows
-source venv/bin/activate  # Linux / Mac
-```
-
-### 3️⃣ Install dependencies
-
-```bash
+source venv/bin/activate   # macOS/Linux
+# venv\Scripts\activate    # Windows
 pip install -r requirements.txt
-```
-
-### 4️⃣ Run the application
-
-```bash
 python app.py
-```
+</pre>
 
-Open your browser and visit:
+<hr>
 
-```
-http://127.0.0.1:5000
-```
+<h2 align="center">👨‍💻 AUTHOR & CONTACT</h2>
 
----
+<p align="center">
+<b>Mayank Choudhary</b><br><br>
+📧 <b>Email:</b> mayankchoudhari123@gmail.com <br><br>
+💼 <b>LinkedIn:</b>
+<a href="https://www.linkedin.com/in/mayank-choudhary-18m-05m-2005m/" target="_blank">
+linkedin.com/in/mayank-choudhary-18m-05m-2005m
+</a>
+<br><br>
+🐙 <b>GitHub:</b>
+<a href="https://github.com/Mayank-Choudhary20" target="_blank">
+github.com/Mayank-Choudhary20
+</a>
+</p>
 
-## 🚀 Deployment
+<hr>
 
-This project is deployed using **Render Web Services**.
-
-Key deployment configurations:
-
-* Python version: 3.x
-* Uses environment variable `PORT`
-* Flask app bound to `0.0.0.0`
-
----
-
-## 🧠 How It Works
-
-1. User enters a natural language query
-2. The input is sent to Flask backend
-3. `text_to_sql()` function processes the text
-4. SQL query is generated and displayed on UI
-
----
-
-## 📈 Future Enhancements
-
-* Integrate Speech To SQL QUERY Generator.
-* Database connection and execution
-* Authentication system
-* Improved UI with Bootstrap / React
-* NLP-based query parsing using ML models
-
----
-
-## 👨‍💻 Author
-
-**Mayank Choudhary**
-📧 Email: [mayankchoudhari123@gmail.com](mailto:mayankchoudhari123@gmail.com)
-🔗 GitHub: [https://github.com/Mayank-Choudhary20](https://github.com/Mayank-Choudhary20)
-
----
-
-## 📄 License
-
-This project is open-source and available under the **MIT License**.
-
----
-
-⭐ If you like this project, consider giving it a star on GitHub!
+<h1 align="center">⭐ PLEASE STAR THIS REPOSITORY ⭐</h1>
