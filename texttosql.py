@@ -365,4 +365,3 @@ if __name__ == "__main__":
         if q.lower() in ("exit", "quit"):
             break
         print("Generated SQL:", text_to_sql(q))
-g
