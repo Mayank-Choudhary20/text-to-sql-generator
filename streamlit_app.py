@@ -212,4 +212,3 @@ if st.sidebar.button("🗑️ Clear History", use_container_width=True):
     st.session_state.sql = ""
     st.session_state.query = ""
     st.rerun()
-c
